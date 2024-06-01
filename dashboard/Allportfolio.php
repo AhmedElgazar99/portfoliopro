@@ -264,7 +264,9 @@ $data=getportfolio();
                   <tr>
                     <td><?= $d['descr'];?></td>
                     <td><?= $d['name'];?> </td>
-                    <td><img alt="image"  src="upload/$d['img']"> </td>
+                    <td>
+                      <img alt="image"  src="Upload/<?= $d['img'];?>" height="50px" width="50px" >
+                    </td>
                     <td><a href="updateportfolio.php?proid=<?= $d['id'];?> "class="btn btn-secondary"> update</td>
                     <td><a href="deleteportfolio.php?proid=<?= $d['id'];?>" class="btn btn-danger">delete</td>
                   </tr>
