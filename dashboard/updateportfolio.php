@@ -265,9 +265,9 @@ if(isset($_POST['desc'])){
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="/allportfolio.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <p>all portfolio</p>
                 </a>
               </li>
    
@@ -327,7 +327,7 @@ if(isset($_POST['desc'])){
                     <label for="descr">descriptoin</label>
                     <textarea class="form-control textarea" name="desc" id="descr"><?php echo ($data['descr']); ?></textarea>
                   </div>
-                  <img alt="image" height="50px" src="<?php echo ($data['img']); ?>">
+                  <img alt="image" height="50px" src="./Upload/<?php echo ($data['img']); ?>">
                   <div class="form-group">
                     <label for="exampleInputFile">File input</label>
                     <div class="input-group">

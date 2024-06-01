@@ -3,7 +3,7 @@
 
 function AddNewPro($desc,$img,$user_id){
     $co=mysqli_connect("localhost","root","","portof");
-    $q="INSERT INTO `portfolio` (`descr`,`img`,`user_id`) Values ('$$desc','$img','$user_id')";
+    $q="INSERT INTO `portfolio` (`descr`,`img`,`user_id`) Values ('$desc','$img','$user_id')";
     $query=mysqli_query($co,$q);
 
     $res=mysqli_affected_rows($co);

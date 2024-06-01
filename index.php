@@ -1,6 +1,9 @@
 <?php
 include 'dashboard/lib/portfolio.php';
 $projects=getportfolio();
+// echo "<pre>";
+// print_r($projects);
+// die;
 
 
 ?>
