@@ -60,7 +60,7 @@ function updatePro($desc,$img,$id){
         if(!empty($img)){
             $q.="` img`='$img'";
         }
-        $q.=" WHERE `id`=='$id' ";
+        $q.="   WHERE `id`=='$id' ";
         $query=mysqli_query($co,$q);
     
         $res=mysqli_affected_rows($co);
